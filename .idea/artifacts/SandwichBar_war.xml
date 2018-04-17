@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SandwichBar:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="sandwichbar.war">
+      <element id="artifact" artifact-name="SandwichBar:war exploded" />
+    </root>
+  </artifact>
+</component>
