@@ -1,5 +1,7 @@
 package be.ucll.sandwichbar.domain;
 
+import java.util.Random;
+
 public class Sandwich {
     private String name;
     private double price;
@@ -53,5 +55,9 @@ public class Sandwich {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void setRandomAmount(){
+        this.amount ++;
     }
 }

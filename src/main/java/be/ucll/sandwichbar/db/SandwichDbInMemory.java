@@ -39,6 +39,12 @@ public class SandwichDbInMemory implements SandwichDb {
         sandwiches.remove(name);
     }
 
+    @Override
+    public void updateSandwich(Sandwich s) {
+        sandwiches.remove(s.getName());
+        sandwiches.put(s.getName(),s);
+    }
+
     private void generateContent(){
         Sandwich s1 = new Sandwich("broodje1", 2.5, "brood met nog een paar dingen", 5);
         Sandwich s2 = new Sandwich("broodje2", 3.5, "brood met nog een andere paar dingen", 10);

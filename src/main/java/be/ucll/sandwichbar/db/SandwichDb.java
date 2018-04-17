@@ -9,4 +9,5 @@ public interface SandwichDb {
     void setAmount(String name, int amount);
     Sandwich getSandwich(String name);
     void deleteSandwich(String name);
+    void updateSandwich(Sandwich s);
 }

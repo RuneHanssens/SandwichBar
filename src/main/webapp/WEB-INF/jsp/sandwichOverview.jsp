@@ -15,7 +15,7 @@
 <div id="flex-container">
 <c:forEach var="sandwich" items="${sandwiches}">
     <div class="sandwichDiv">
-        <table>
+        <table id="${sandwich.name}">
             <tr>
                 <th>${sandwich.name}</th>
             </tr>

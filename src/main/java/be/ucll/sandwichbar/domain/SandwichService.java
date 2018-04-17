@@ -25,7 +25,7 @@ public class SandwichService {
         db.addSandwich(s);
     }
 
-    public void setAmount(String name, int amount){
-        db.setAmount(name,amount);
+    public void updateSandwich(Sandwich s){
+        db.updateSandwich(s);
     }
 }

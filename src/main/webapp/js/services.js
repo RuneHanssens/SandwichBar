@@ -2,7 +2,7 @@ window.onload = pollManager;
 
 function pollManager(){
     pollAmount();
-    setTimeout(pollManager, 1000);
+    setTimeout(pollManager, 5000);
 }
 
 function pollAmount() {
@@ -12,10 +12,18 @@ function pollAmount() {
         dataType:"json",
         success: function (json) {
             console.log("success while retrieving the amount of available sandwiches!");
-            console.log(json);
+            writeAmount(json);
         },
         error: function () {
             console.log("Something went wrong trying to retrieve the amount of available sandwiches!");
         },
     });
+}
+
+function writeAmount(json){
+    for (i in json){
+        var sandwich = json[i];
+        var td = document.getElementById(sandwich.name + "-amount");
+        td.innerText = sandwich.amount;
+    }
 }
