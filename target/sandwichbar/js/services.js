@@ -2,8 +2,33 @@ window.onload = pollManager;
 
 function pollManager(){
     pollAmount();
+    polltemp();
     setTimeout(pollManager, 5000);
 }
+
+function polltemp(){
+    $.ajax({
+        type:"GET",
+        url:"ajax.htm",
+        dataType:"json",
+        success: function (json) {
+            console.log("Success while trying to retrieve the temperature!");
+            writeTemp(json);
+        },
+        error:function () {
+            console.log("Something went wrong while trying to retrieve the temperature!");
+        },
+    });
+}
+
+function writeTemp(json) {
+    for(i in json){
+        var temp = json[i];
+        var doc = document.getElementById("temp")
+        doc.innerText = temp.temp;
+    }
+}
+
 
 function pollAmount() {
     $.ajax({
