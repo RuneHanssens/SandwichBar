@@ -15,15 +15,24 @@
 <header>
     <nav>
         <img src="${pageContext.request.contextPath}/images/ucllLogo.png" class="logo">
-        <a href="${pageContext.request.contextPath}/sandwich.htm">Live</a>
+        <a href="">Live</a>
         <a href="${pageContext.request.contextPath}/graph.htm">Statistieken</a>
     </nav>
 </header>
 <body>
 <div class="container">
-    <div id="graphMoist"><canvas id ="myChart1"></canvas></div>
-    <div id="graphTemp"><canvas id ="myChart2"></canvas></div>
-    <div id="graphBread"><canvas id ="myChart3"></canvas></div>
+    <div id="graphMoist">
+       <h3>Vochtigheid</h3>
+        <canvas id="myChart1"></canvas>
+    </div>
+    <div id="graphTemp">
+       <h3>Temperatuur</h3>
+        <canvas id="myChart2"></canvas>
+    </div>
+    <div id="graphBread">
+       <h3>Populare broodjes</h3>
+        <canvas id="myChart3"></canvas>
+    </div>
 </div>
 
 <script>
@@ -93,7 +102,6 @@
         }
     })
 </script>
-<footer><p>Gemaakt door Rune, Bjorn, Remi en Maarten</p></footer>
 </body>
 </html>
 

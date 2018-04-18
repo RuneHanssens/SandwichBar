@@ -115,24 +115,38 @@ footer > *{
 }
 
 
+#graphMoist {
+    min-width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    max-width: 450px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    height: 80%;
-}
-
-
-
-#graphMoist {
-    width: 45%;
+    margin: 0px;
+    padding: 0px;
 }
 
 #graphTemp {
-    width: 45%;
+    min-width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    max-width: 450px;
 }
 
 #graphBread {
+    min-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 100%;
-    margin-bottom: 8%;
+    max-width: 900px;
 }
