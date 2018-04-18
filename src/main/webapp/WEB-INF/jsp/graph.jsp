@@ -14,7 +14,7 @@
 <header>
     <nav>
         <img src="${pageContext.request.contextPath}/images/ucllLogo.png" class="logo">
-        <a href="">Live</a>
+        <a href="${pageContext.request.contextPath}/sandwich.htm">Live</a>
         <a href="${pageContext.request.contextPath}/graph.htm">Statistieken</a>
     </nav>
 </header>
@@ -22,30 +22,10 @@
 <div class="container">
     <canvas id ="myChart"></canvas>
 </div>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/graph.js"></script>
 
-<script>
-    let myChart = document.getElementById('myChart').getContext('2d');
-
-    let massPopChart = new Chart(myChart, {
-        type:'line',
-        data:{
-            labels:['tijd1', 'tijd2', 'tijd3', 'tijd4'],
-            datasets:[{
-                label: 'temp',
-                data:[
-                    24,
-                    25,
-                    15,
-                    -4
-                ],
-                backgroundColor:'orange',
-            }]
-        },
-        options:{
-
-        }
-    })
-</script>
 <footer><p>Gemaakt door Rune, Bjorn, Remi en Maarten</p></footer>
 </body>
 </html>

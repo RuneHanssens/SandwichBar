@@ -1,9 +1,9 @@
-window.onload = pollManager;
+window.onload = sandwichPollManager;
 
-function pollManager(){
+function sandwichPollManager(){
     pollAmount();
     polltemp();
-    setTimeout(pollManager, 5000);
+    setTimeout(sandwichPollManager, 5000);
 }
 
 function polltemp(){

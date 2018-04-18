@@ -1,14 +1,13 @@
 package be.ucll.sandwichbar.web.controller;
 
-import be.ucll.sandwichbar.domain.Sandwich;
-import be.ucll.sandwichbar.domain.SandwichService;
-import be.ucll.sandwichbar.domain.SandwichUpdater;
-import be.ucll.sandwichbar.domain.TemperatureUpdater;
+import be.ucll.sandwichbar.domain.*;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -54,6 +53,19 @@ public class AjaxController {
     }
 
     @ResponseBody
+    @RequestMapping(method = RequestMethod.GET, value="/barGraph")
+    public String getBarGraph(){
+        try {
+            ArrayList<SandwichGraphData> list = service.getSandwichGraphData();
+            String result = toJson(list);
+            return result;
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @ResponseBody
     @RequestMapping(method = RequestMethod.POST, value="/sandwich")
     public String updateAmount(@RequestBody SandwichUpdater data){
         Sandwich s = service.getSandwich(data.getName());
@@ -70,14 +82,11 @@ public class AjaxController {
         return null;
     }
 
-    private String toJson(List<Sandwich> aList) throws JsonProcessingException {
-        ObjectMapper mapper = new ObjectMapper();
-        return mapper.writeValueAsString(aList);
-    }
-
     private String toJson(Object o) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         return mapper.writeValueAsString(o);
     }
+
+
 }
 

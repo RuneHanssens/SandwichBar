@@ -1,23 +1,24 @@
 package be.ucll.sandwichbar.domain;
 
 
-import be.ucll.sandwichbar.db.SandwichDb;
-import be.ucll.sandwichbar.db.SandwichDbInMemory;
-import be.ucll.sandwichbar.db.TemperatureDb;
-import be.ucll.sandwichbar.db.TemperatureDbInMemory;
+import be.ucll.sandwichbar.db.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Service
 public class SandwichService {
     private SandwichDb sDb;
     private TemperatureDb tDb;
+    private SandwichHistoryDb hDb;
+
     @Autowired
     public SandwichService() {
         sDb = new SandwichDbInMemory();
         tDb = new TemperatureDbInMemory();
+        hDb = new SandwichHistoryDbInMemory();
     }
 
     public List<Sandwich> getSandwiches(){
@@ -47,5 +48,9 @@ public class SandwichService {
 
     public void setTemp(double temp){
         tDb.setTemp(temp);
+    }
+
+    public ArrayList<SandwichGraphData> getSandwichGraphData(){
+        return hDb.getPopularSandwiches();
     }
 }
