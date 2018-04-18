@@ -23,10 +23,16 @@ public class AjaxController {
     @ResponseBody
     @RequestMapping(method = RequestMethod.GET)
     public String getAmountOfSandwiches(){
+
+
+        //RANDOM VALUES
         for (Sandwich s:service.getSandwiches()) {
             s.setRandomAmount();
             service.updateSandwich(s);
         }
+        //END
+
+
         try {
             String result = toJson(service.getSandwiches());
             return result;
@@ -48,6 +54,7 @@ public class AjaxController {
     @ResponseBody
     @RequestMapping(method = RequestMethod.POST, value="/temp")
     public String updateTemp(@RequestBody TemperatureUpdater data){
+        System.out.println(data.getTemp());
         service.setTemp(data.getTemp());
         return null;
     }
