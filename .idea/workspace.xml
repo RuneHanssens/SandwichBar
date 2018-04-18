@@ -6,15 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c9d7ebc-279d-41cf-bef3-9d256b673da3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/services.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/services.js" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/ucll/sandwichbar/web/controller/AjaxController.class" afterPath="$PROJECT_DIR$/target/classes/be/ucll/sandwichbar/web/controller/AjaxController.class" />
-      <change beforePath="$PROJECT_DIR$/target/sandwichbar.war" afterPath="$PROJECT_DIR$/target/sandwichbar.war" />
-      <change beforePath="$PROJECT_DIR$/target/sandwichbar/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/target/sandwichbar/META-INF/MANIFEST.MF" />
-      <change beforePath="$PROJECT_DIR$/target/sandwichbar/WEB-INF/classes/be/ucll/sandwichbar/web/controller/AjaxController.class" afterPath="$PROJECT_DIR$/target/sandwichbar/WEB-INF/classes/be/ucll/sandwichbar/web/controller/AjaxController.class" />
-      <change beforePath="$PROJECT_DIR$/target/sandwichbar/js/services.js" afterPath="$PROJECT_DIR$/target/sandwichbar/js/services.js" />
-    </list>
+    <list default="true" id="3c9d7ebc-279d-41cf-bef3-9d256b673da3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -639,7 +631,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25907000" />
+    <option name="totallyTimeSpent" value="26070000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1934" height="1038" extended-state="0" />
