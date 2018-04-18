@@ -27,5 +27,6 @@ public class DispatcherServletConfig implements WebMvcConfigurer {
         registry.addViewController("/").setViewName("index");
         registry.addViewController("index.htm").setViewName("index");
         registry.addViewController("graph.htm").setViewName("graph");
+        registry.addViewController("sandwich.htm").setViewName("sandwich");
     }
 }
