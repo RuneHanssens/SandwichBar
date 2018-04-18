@@ -9,7 +9,7 @@ function test() {
         type: "POST",
         contentType: "application/json",
         dataType: 'json',
-        url: "ajax.htm",
+        url: "ajax/sandwich.htm",
         data: JSON.stringify(data)
     });
 }

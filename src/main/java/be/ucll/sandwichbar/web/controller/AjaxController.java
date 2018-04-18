@@ -32,13 +32,19 @@ public class AjaxController {
         return null;
     }
 
-
     @ResponseBody
-    @RequestMapping(method = RequestMethod.POST, headers = "Accept=*/*")
+    @RequestMapping(method = RequestMethod.POST, value="/sandwich")
     public String updateAmount(@RequestBody SandwichUpdater data){
         Sandwich s = service.getSandwich(data.getName());
         s.setAmount(data.getAmount());
         service.updateSandwich(s);
+        return null;
+    }
+
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.POST, value="/temp")
+    public String updateTemp(@RequestBody String data){
+        //TODO
         return null;
     }
 

@@ -7,19 +7,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c9d7ebc-279d-41cf-bef3-9d256b673da3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/domain/SandwichUpdater.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/test.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/domain/Sandwich.java" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/domain/Sandwich.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/domain/SandwichService.java" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/domain/SandwichService.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/web/controller/AjaxController.java" afterPath="$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/web/controller/AjaxController.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/jsp/index.jsp" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/ucll/sandwichbar/domain/SandwichService.class" afterPath="$PROJECT_DIR$/target/classes/be/ucll/sandwichbar/domain/SandwichService.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/be/ucll/sandwichbar/web/controller/AjaxController.class" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/test.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/test.js" />
+      <change beforePath="$PROJECT_DIR$/target/classes/be/ucll/sandwichbar/web/controller/AjaxController.class" afterPath="$PROJECT_DIR$/target/classes/be/ucll/sandwichbar/web/controller/AjaxController.class" />
       <change beforePath="$PROJECT_DIR$/target/sandwichbar.war" afterPath="$PROJECT_DIR$/target/sandwichbar.war" />
-      <change beforePath="$PROJECT_DIR$/target/sandwichbar/WEB-INF/classes/be/ucll/sandwichbar/domain/SandwichService.class" afterPath="$PROJECT_DIR$/target/sandwichbar/WEB-INF/classes/be/ucll/sandwichbar/domain/SandwichService.class" />
       <change beforePath="$PROJECT_DIR$/target/sandwichbar/WEB-INF/classes/be/ucll/sandwichbar/web/controller/AjaxController.class" afterPath="$PROJECT_DIR$/target/sandwichbar/WEB-INF/classes/be/ucll/sandwichbar/web/controller/AjaxController.class" />
-      <change beforePath="$PROJECT_DIR$/target/sandwichbar/WEB-INF/jsp/index.jsp" afterPath="$PROJECT_DIR$/target/sandwichbar/WEB-INF/jsp/index.jsp" />
+      <change beforePath="$PROJECT_DIR$/target/sandwichbar/js/test.js" afterPath="$PROJECT_DIR$/target/sandwichbar/js/test.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AjaxController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AjaxController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/web/controller/AjaxController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+            <state relative-caret-position="536">
+              <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="52" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#665#666#0" expanded="true" />
@@ -69,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SandwichUpdater.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SandwichUpdater.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/domain/SandwichUpdater.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="392">
+              <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
               <folding>
                 <element signature="e#301#302#0" expanded="true" />
                 <element signature="e#328#329#0" expanded="true" />
@@ -88,11 +82,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="SandwichController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/web/controller/SandwichController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/test.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="231">
-              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+              <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -103,16 +107,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="336">
               <caret line="16" column="7" lean-forward="false" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SandwichDb.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/db/SandwichDb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -697,12 +691,12 @@
       <workItem from="1523950523528" duration="6813000" />
       <workItem from="1523969028231" duration="4012000" />
       <workItem from="1524036947390" duration="3900000" />
-      <workItem from="1524041070456" duration="1317000" />
+      <workItem from="1524041070456" duration="2251000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19963000" />
+    <option name="totallyTimeSpent" value="20897000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1934" height="1038" extended-state="0" />
@@ -821,10 +815,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="672">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="e#1051#1052#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -926,10 +917,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="e#1051#1052#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1027,10 +1015,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
           <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-          <folding>
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="e#1051#1052#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1127,17 +1112,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/web/controller/SandwichController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-          <folding>
-            <element signature="e#1011#1012#0" expanded="false" />
-            <element signature="e#1051#1052#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/db/SandwichDbInMemory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -1202,6 +1176,39 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/domain/SandwichUpdater.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="26" column="28" lean-forward="false" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding>
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#536#537#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/web/controller/SandwichController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="27" lean-forward="false" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/domain/Sandwich.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -1213,39 +1220,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/web/controller/AjaxController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+        <state relative-caret-position="536">
+          <caret line="51" column="39" lean-forward="true" selection-start-line="51" selection-start-column="39" selection-end-line="52" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#665#666#0" expanded="true" />
             <element signature="e#703#704#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/be/ucll/sandwichbar/domain/SandwichUpdater.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="5" lean-forward="false" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="e#301#302#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#459#460#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
           </folding>
         </state>
       </provider>
