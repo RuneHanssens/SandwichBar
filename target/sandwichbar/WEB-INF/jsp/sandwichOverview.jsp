@@ -40,6 +40,17 @@
     </div>
 </c:forEach>
 </div>
+    <div class="sandwichDiv" id="tempView">
+        <table>
+            <tr>
+                <td>
+                    <img class="smallIcon" src="${pageContext.request.contextPath}/images/thermometer.png">
+                </td>
+                <td id="temp">
+                </td>
+            </tr>
+        </table>
+    </div>
 </main>
 <footer><p>Gemaakt door Rune, Bjorn, Remi en Maarten</p></footer>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.4.4.min.js"></script>

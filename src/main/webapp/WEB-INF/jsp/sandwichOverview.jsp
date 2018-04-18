@@ -44,10 +44,9 @@
         <table>
             <tr>
                 <td>
-                    <img class="smallIcon" src="thermometer.png">
+                    <img class="smallIcon" src="${pageContext.request.contextPath}/images/thermometer.png">
                 </td>
                 <td id="temp">
-                    10°C
                 </td>
             </tr>
         </table>

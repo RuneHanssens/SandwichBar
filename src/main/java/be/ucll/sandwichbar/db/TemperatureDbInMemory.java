@@ -12,7 +12,7 @@ public class TemperatureDbInMemory implements TemperatureDb{
 
     @Override
     public double getTemp() {
-        return 0;
+        return temp;
     }
 
     @Override

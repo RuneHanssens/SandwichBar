@@ -21,10 +21,8 @@ public class AjaxController {
     }
 
     @ResponseBody
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, value="/sandwich")
     public String getAmountOfSandwiches(){
-
-
         //RANDOM VALUES
         for (Sandwich s:service.getSandwiches()) {
             s.setRandomAmount();
@@ -35,6 +33,19 @@ public class AjaxController {
 
         try {
             String result = toJson(service.getSandwiches());
+            return result;
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.GET, value="/temp")
+    public String getTemp(){
+        try {
+            TemperatureUpdater test = new TemperatureUpdater(service.getTemp());
+            String result = toJson(test);
             return result;
         } catch (JsonProcessingException e) {
             e.printStackTrace();
@@ -62,6 +73,11 @@ public class AjaxController {
     private String toJson(List<Sandwich> aList) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         return mapper.writeValueAsString(aList);
+    }
+
+    private String toJson(Object o) throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
+        return mapper.writeValueAsString(o);
     }
 }
 
