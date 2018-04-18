@@ -1,6 +1,5 @@
 package be.ucll.sandwichbar.domain;
 
-import java.util.Random;
 
 public class Sandwich {
     private String name;

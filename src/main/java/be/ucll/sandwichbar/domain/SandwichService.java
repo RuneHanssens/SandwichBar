@@ -28,4 +28,13 @@ public class SandwichService {
     public void updateSandwich(Sandwich s){
         db.updateSandwich(s);
     }
+
+    public void updateAmount(String name, int amount){
+        db.getSandwich(name).setAmount(amount);
+        System.out.println(db.getSandwich(name).getAmount());
+    }
+
+    public Sandwich getSandwich(String name){
+        return db.getSandwich(name);
+    }
 }

@@ -2,13 +2,13 @@ package be.ucll.sandwichbar.web.controller;
 
 import be.ucll.sandwichbar.domain.Sandwich;
 import be.ucll.sandwichbar.domain.SandwichService;
+import be.ucll.sandwichbar.domain.SandwichUpdater;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 
 @Controller
@@ -29,6 +29,16 @@ public class AjaxController {
         } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
+        return null;
+    }
+
+
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.POST, headers = "Accept=*/*")
+    public String updateAmount(@RequestBody SandwichUpdater data){
+        Sandwich s = service.getSandwich(data.getName());
+        s.setAmount(data.getAmount());
+        service.updateSandwich(s);
         return null;
     }
 
