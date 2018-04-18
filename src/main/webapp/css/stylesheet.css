@@ -114,3 +114,25 @@ footer > *{
     color: #fff;
 }
 
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+}
+
+
+
+#graphMoist {
+    width: 45%;
+}
+
+#graphTemp {
+    width: 45%;
+}
+
+#graphBread {
+    width: 100%;
+    margin-bottom: 8%;
+}
