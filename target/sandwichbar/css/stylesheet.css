@@ -1,25 +1,29 @@
 html {
     font-family: arial;
     height: 100%;
-    background: linear-gradient(#47b8b4, #147cb8);
-    /*background: linear-gradient(#e66465, #9198e5);*/
+    background: linear-gradient(160deg,#EBD42D, #3FA65B);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /*    background: linear-gradient(#e66465, #9198e5);*/
 }
 
 header{
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    background: #ffffff;
+    display: flex;
 }
 
 header a {
     font-size: 2.5em;
-    margin-right: 10px;
-    color: #fff;
+    margin-right: 20px;
+    margin-left: 50px;
+    color: #000000;
 }
 
-body {
+main {
     margin: auto;
     max-width: 1000px;
-    height: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
@@ -32,10 +36,11 @@ a {
     width: 45%;
     background-color: #ffffff;
     border-radius: 15px;
-    padding: 15px;
-    margin: 10px;
+    padding: 10px;
     text-align: left;
-    color: #000000
+    color: #000000;
+    font-weight:500;
+    margin-bottom: 40px;
 }
 
 .sandwichDiv th{
@@ -46,18 +51,65 @@ a {
     padding: 8px;
 }
 
+.sandwichDiv tr{
+    width: 100%;
+    display:flex;
+    line-height: 25px;
+}
+
 #flex-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 h1{
     font-size: 1.8em;
-    color: #ffffff;
+    color: #000;
 }
 
-.whiteP{
-    margin-top: 8px;
-    color: #ffffff;
+.smallIcon{
+    width: 30px;
+}
+
+.textDiv{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding:15px;
+    border-radius: 15px;
+    background: #ffffff;
+}
+
+p{
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+nav{
+    display: flex;
+    line-height: 100px;
+}
+
+.logo{
+    height: 90px;
+    margin-left: 40px;
+}
+
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+footer{
+    position: absolute;
+    background: #1FA2FF;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+footer > *{
+    text-align: center;
+    color: #fff;
 }
