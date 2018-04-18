@@ -3,6 +3,7 @@ package be.ucll.sandwichbar.web.controller;
 import be.ucll.sandwichbar.domain.Sandwich;
 import be.ucll.sandwichbar.domain.SandwichService;
 import be.ucll.sandwichbar.domain.SandwichUpdater;
+import be.ucll.sandwichbar.domain.TemperatureUpdater;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,14 +21,31 @@ public class AjaxController {
     }
 
     @ResponseBody
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping(method = RequestMethod.GET, value="/sandwich")
     public String getAmountOfSandwiches(){
+        //RANDOM VALUES
         for (Sandwich s:service.getSandwiches()) {
             s.setRandomAmount();
             service.updateSandwich(s);
         }
+        //END
+
+
         try {
             String result = toJson(service.getSandwiches());
+            return result;
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.GET, value="/temp")
+    public String getTemp(){
+        try {
+            TemperatureUpdater test = new TemperatureUpdater(service.getTemp());
+            String result = toJson(test);
             return result;
         } catch (JsonProcessingException e) {
             e.printStackTrace();
@@ -46,14 +64,20 @@ public class AjaxController {
 
     @ResponseBody
     @RequestMapping(method = RequestMethod.POST, value="/temp")
-    public String updateTemp(@RequestBody String data){
-        //TODO
+    public String updateTemp(@RequestBody TemperatureUpdater data){
+        System.out.println(data.getTemp());
+        service.setTemp(data.getTemp());
         return null;
     }
 
     private String toJson(List<Sandwich> aList) throws JsonProcessingException {
         ObjectMapper mapper = new ObjectMapper();
         return mapper.writeValueAsString(aList);
+    }
+
+    private String toJson(Object o) throws JsonProcessingException {
+        ObjectMapper mapper = new ObjectMapper();
+        return mapper.writeValueAsString(o);
     }
 }
 
