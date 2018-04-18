@@ -20,7 +20,6 @@ public class SandwichController {
 
     @RequestMapping(method = RequestMethod.GET)
     public ModelAndView getActivities(){
-        System.out.println(service.getSandwiches());
         return new ModelAndView("sandwichOverview", "sandwiches", service.getSandwiches());
     }
 

@@ -41,7 +41,7 @@
 </c:forEach>
 </div>
 </main>
-<footer><p>Gemaakt door Rune, Bjorn, Rémi en Maarten</p></footer>
+<footer><p>Gemaakt door Rune, Bjorn, Remi en Maarten</p></footer>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.4.4.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/services.js"></script>
