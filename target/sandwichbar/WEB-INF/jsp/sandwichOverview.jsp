@@ -10,7 +10,7 @@
     <nav>
         <img src="${pageContext.request.contextPath}/images/ucllLogo.png" class="logo">
         <a href="">Live</a>
-        <a href="">Statistieken</a>
+        <a href="${pageContext.request.contextPath}/graph.htm">Statistieken</a>
     </nav>
 </header>
 <main>
