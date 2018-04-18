@@ -22,6 +22,10 @@ public class AjaxController {
     @ResponseBody
     @RequestMapping(method = RequestMethod.GET)
     public String getAmountOfSandwiches(){
+        for (Sandwich s:service.getSandwiches()) {
+            s.setRandomAmount();
+            service.updateSandwich(s);
+        }
         try {
             String result = toJson(service.getSandwiches());
             return result;
