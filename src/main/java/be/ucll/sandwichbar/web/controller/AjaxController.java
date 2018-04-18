@@ -3,6 +3,7 @@ package be.ucll.sandwichbar.web.controller;
 import be.ucll.sandwichbar.domain.Sandwich;
 import be.ucll.sandwichbar.domain.SandwichService;
 import be.ucll.sandwichbar.domain.SandwichUpdater;
+import be.ucll.sandwichbar.domain.TemperatureUpdater;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,8 +47,8 @@ public class AjaxController {
 
     @ResponseBody
     @RequestMapping(method = RequestMethod.POST, value="/temp")
-    public String updateTemp(@RequestBody String data){
-        //TODO
+    public String updateTemp(@RequestBody TemperatureUpdater data){
+        service.setTemp(data.getTemp());
         return null;
     }
 
