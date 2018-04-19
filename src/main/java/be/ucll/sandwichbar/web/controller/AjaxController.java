@@ -45,19 +45,6 @@ public class AjaxController {
     }
 
     @ResponseBody
-    @RequestMapping(method = RequestMethod.GET, value="/amount")
-    public String getAmount(){
-        try {
-            AmountUpdater test = new AmountUpdater("broodje1", service.getSandwich("broodje1").getAmount());
-            String result = toJson(test);
-            return result;
-        } catch (JsonProcessingException e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
-
-    @ResponseBody
     @RequestMapping(method = RequestMethod.GET, value="/barGraph")
     public String getBarGraph(){
         try {
@@ -89,12 +76,6 @@ public class AjaxController {
         return mapper.writeValueAsString(o);
     }
 
-    @ResponseBody
-    @RequestMapping(method = RequestMethod.POST, value="/amount")
-    public void updateAmount(@RequestBody AmountUpdater data){
-        System.out.println(data.getAmount());
-        service.updateAmount(data.getName(),data.getAmount());
-    }
 
 }
 
