@@ -6,7 +6,6 @@
     <%@include file="header.jspf"%>
 <link rel="stylesheet" href="/css/stylesheet.css">
 </head>
-<body>
 <header>
     <nav>
         <img src="${pageContext.request.contextPath}/images/ucllLogo.png" class="logo">
@@ -36,5 +35,4 @@
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/graph.js"></script>
 
 </body>
-
-    </body></html>
+</html>

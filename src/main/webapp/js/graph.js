@@ -1,5 +1,5 @@
 window.onload = graphPollManager();
-
+let chart;
 function graphPollManager() {
     pollBarGraph();
     setTimeout(graphPollManager, '10000');
@@ -19,8 +19,7 @@ function drawBarGraph(json) {
     maxValue += 2;
 
     let myChart3 = document.getElementById('myChart3').getContext('2d');
-    myChart3.clearRect(0, 0, document.getElementById('myChart3').width, document.getElementById('myChart3').height);
-    let massPopChart = new Chart(myChart3, {
+    chart = new Chart(myChart3, {
         type: 'bar',
         data: {
             labels: labels,
