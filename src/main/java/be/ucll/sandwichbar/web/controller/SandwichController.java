@@ -10,7 +10,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @ComponentScan
-@RequestMapping("/sandwich")
+@RequestMapping({"/sandwich", "*"})
 public class SandwichController {
     private SandwichService service;
 
@@ -22,10 +22,4 @@ public class SandwichController {
     public ModelAndView getActivities(){
         return new ModelAndView("sandwichOverview", "sandwiches", service.getSandwiches());
     }
-
-    @RequestMapping(method = RequestMethod.POST)
-    public void saveData(String test){
-        System.out.println(test);
-    }
-
 }
