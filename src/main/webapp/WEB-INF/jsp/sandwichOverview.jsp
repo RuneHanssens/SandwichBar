@@ -9,8 +9,8 @@
 <header>
     <nav>
         <img src="${pageContext.request.contextPath}/images/ucllLogo.png" class="logo">
-        <a href="${pageContext.request.contextPath}/sandwich.htm">Live</a>
-        <a href="${pageContext.request.contextPath}/graph.htm">Statistieken</a>
+        <a href="${pageContext.request.contextPath}/sandwich.htm">Broodjes</a>
+        <a href="${pageContext.request.contextPath}/graph.htm">Geschiedenis</a>
     </nav>
 </header>
 <main>

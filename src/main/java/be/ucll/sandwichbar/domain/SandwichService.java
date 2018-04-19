@@ -12,13 +12,11 @@ import java.util.List;
 public class SandwichService {
     private SandwichDb sDb;
     private TemperatureDb tDb;
-    private SandwichHistoryDb hDb;
 
     @Autowired
     public SandwichService() {
         sDb = new SandwichDbInMemory();
         tDb = new TemperatureDbInMemory();
-        hDb = new SandwichHistoryDbInMemory();
     }
 
     public List<Sandwich> getSandwiches(){
@@ -48,9 +46,5 @@ public class SandwichService {
 
     public void setTemp(double temp){
         tDb.setTemp(temp);
-    }
-
-    public ArrayList<SandwichGraphData> getSandwichGraphData(){
-        return hDb.getPopularSandwiches();
     }
 }

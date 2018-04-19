@@ -20,7 +20,7 @@ function drawBarGraph(json){
         data:{
             labels:labels,
             datasets:[{
-                label: 'temp',
+                label: 'aantal verkocht',
                 data:data,
                 backgroundColor:'orange',
             }]

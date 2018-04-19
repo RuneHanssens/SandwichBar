@@ -56,7 +56,7 @@ public class AjaxController {
     @RequestMapping(method = RequestMethod.GET, value="/barGraph")
     public String getBarGraph(){
         try {
-            ArrayList<SandwichGraphData> list = service.getSandwichGraphData();
+            List<Sandwich> list = service.getSandwiches();
             String result = toJson(list);
             return result;
         } catch (JsonProcessingException e) {

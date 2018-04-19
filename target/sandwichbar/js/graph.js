@@ -20,7 +20,7 @@ function drawBarGraph(json){
         data:{
             labels:labels,
             datasets:[{
-                label: 'temp',
+                label: 'aantal verkocht',
                 data:data,
                 backgroundColor:'orange',
             }]
@@ -30,8 +30,6 @@ function drawBarGraph(json){
                 yAxes: [{
                     display: true,
                     ticks: {
-                        suggestedMin: 0,    // minimum will be 0, unless there is a lower value.
-                        // OR //
                         beginAtZero: true   // minimum value will be 0.
                     }
                 }]

@@ -8,6 +8,7 @@ public class Sandwich {
     private double price;
     private String description;
     private int amount;
+    private int bought;
 
     public Sandwich() {
     }
@@ -24,6 +25,7 @@ public class Sandwich {
         this.price = price;
         this.description = description;
         setAmount(0);
+        setBought(0);
     }
 
     public int getAmount() {
@@ -63,5 +65,13 @@ public class Sandwich {
         if((r.nextInt(5)+1)==5){
             this.amount ++;
         }
+    }
+
+    public int getBought() {
+        return bought;
+    }
+
+    public void setBought(int bought) {
+        this.bought = bought;
     }
 }
