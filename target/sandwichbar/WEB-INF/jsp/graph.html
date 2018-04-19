@@ -29,14 +29,20 @@
 <div class="container">
 <div id="graphMoist">
     <h3>Vochtigheid</h3>
-    <div><canvas id="myChart1"></canvas></div>
+    <div id="doughnut">
+    <canvas id="myChart1"></canvas>
+    <div class="donut-inner">
+    <h5>80%</h5>
+</div>
+    </div>
+    
 </div>
 <div id="graphTemp">
     <h3>Temperatuur</h3>
     <div><canvas id="myChart2"></canvas></div>
 </div>
 <div id="graphBread">
-    <h3>Populare broodjes</h3>
+    <h3>Populaire broodjes</h3>
     <div><canvas id="myChart3"></canvas></div>
 </div>
 </div>
@@ -45,18 +51,16 @@
     let myChart1 = document.getElementById('myChart1').getContext('2d');
 
     let massPopChart1= new Chart(myChart1, {
-        type:'line',
+        type:'doughnut',
         data:{
-            labels:['tijd1', 'tijd2', 'tijd3', 'tijd4'],
+            labels:['Vochtigheid %'],
             datasets:[{
                 label: 'Vochtigheid',
                 data:[
-                    17,
-                    25,
-                    13,
-                    23
+                    80,
+                    20
                 ],
-                backgroundColor:'blue',
+                backgroundColor:['blue','lightgrey'],
             }]
         },
         options:{

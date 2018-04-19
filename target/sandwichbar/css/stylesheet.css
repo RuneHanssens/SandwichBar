@@ -153,6 +153,7 @@ footer > *{
     color: #FFF;
     background-color: #ededed;
     border-radius: 4px;
+    padding-bottom: 5px;
 }
 
 .container div h3{
@@ -215,4 +216,16 @@ footer > *{
 
 
 
+#doughnut {
+    position: relative;
+}
 
+#donut-inner {
+    color: black;
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    top: 45%;
+    height: 30%;
+    width: 50%;
+}
