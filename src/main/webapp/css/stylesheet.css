@@ -135,7 +135,9 @@ footer > *{
     margin-top: 5px
 }
 #tempView {
-    width: 110px;
+    width: 80px;
+    height: 40px;
+    min-width: 0px;
     margin: auto;
 }
 
