@@ -50,6 +50,9 @@ public class SandwichDbInMemory implements SandwichDb {
         Sandwich s2 = new Sandwich("Balleke andalouse", 3.0, "Wit broodje met balleke en andalouse", 10);
         Sandwich s3 = new Sandwich("Mozzarella pesto", 3.5, "Wit broodje met tomaat, mozzarello en pesto", 8);
         Sandwich s4 = new Sandwich("Smoske", 2.8, "Wit broodje met hesp, kaas, groentjes en mayonaise", 3);
+        s2.setBought(9);
+        s3.setBought(6);
+        s4.setBought(11);
         addSandwich(s1);
         addSandwich(s2);
         addSandwich(s3);
