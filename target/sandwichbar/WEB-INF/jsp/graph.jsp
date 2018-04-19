@@ -25,7 +25,7 @@
         <canvas id="myChart2"></canvas>
     </div>
     <div id="graphBread">
-       <h3>Populare broodjes</h3>
+       <h3>Populaire broodjes</h3>
         <div><canvas id="myChart3"></canvas></div>
     </div>
 </div>
