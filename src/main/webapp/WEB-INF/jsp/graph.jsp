@@ -23,18 +23,18 @@
 </header>
 <body>
 <div class="container">
-    <div id="graphMoist">
-       <h3>Vochtigheid</h3>
-        <canvas id="myChart1"></canvas>
-    </div>
-    <div id="graphTemp">
-       <h3>Temperatuur</h3>
-        <canvas id="myChart2"></canvas>
-    </div>
-    <div id="graphBread">
-       <h3>Populare broodjes</h3>
-        <div><canvas id="myChart3"></canvas></div>
-    </div>
+<div id="graphMoist">
+    <h3>Vochtigheid</h3>
+    <div><canvas id="myChart1"></canvas></div>
+</div>
+<div id="graphTemp">
+    <h3>Temperatuur</h3>
+    <div><canvas id="myChart2"></canvas></div>
+</div>
+<div id="graphBread">
+    <h3>Populare broodjes</h3>
+    <div><canvas id="myChart3"></canvas></div>
+</div>
 </div>
 
 <script>
@@ -47,16 +47,17 @@
             datasets:[{
                 label: 'Vochtigheid',
                 data:[
-                    24,
+                    17,
                     25,
-                    15,
-                    -4
+                    13,
+                    23
                 ],
                 backgroundColor:'blue',
             }]
         },
         options:{
-
+            maintainAspectRatio: false,
+            responsive: true
         }
     })
     //////////////////////////////////////
@@ -78,7 +79,8 @@
             }]
         },
         options:{
-
+            maintainAspectRatio: false,
+            responsive: true
         }
     })
     /////////////////////////////////
