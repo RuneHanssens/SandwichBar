@@ -8,11 +8,15 @@ function graphPollManager() {
 function drawBarGraph(json) {
     var labels = [];
     var data = [];
+
     for (i in json) {
         var graphData = json[i];
         labels.push(graphData.name);
         data.push(graphData.bought);
     }
+
+    var maxValue = Math.max.apply(Math, data);
+    maxValue += 2;
 
     let myChart3 = document.getElementById('myChart3').getContext('2d');
     let massPopChart = new Chart(myChart3, {
@@ -22,7 +26,7 @@ function drawBarGraph(json) {
             datasets: [{
                 label: 'aantal verkocht',
                 data: data,
-                backgroundColor: 'red',
+                backgroundColor: 'orange',
             }]
         },
         options: {
@@ -32,7 +36,9 @@ function drawBarGraph(json) {
                 yAxes: [{
                     display: true,
                     ticks: {
-                        beginAtZero: true // minimum value will be 0.
+                        beginAtZero: true,
+                        fixedStepSize: 1,
+                        max:maxValue
                     }
                 }]
             }
