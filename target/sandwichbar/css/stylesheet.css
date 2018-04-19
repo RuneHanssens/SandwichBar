@@ -123,7 +123,6 @@ footer > *{
     justify-content: center;
     width: 50%;
     max-width: 450px;
-    margin-top: 0px;
 }
 
 .container {
@@ -131,9 +130,8 @@ footer > *{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    margin: 0px;
     padding: 0px;
-
+    margin-top: 1%;
 }
 #tempView {
     width: 110px;
@@ -151,7 +149,6 @@ footer > *{
     justify-content: center;
     width: 50%;
     max-width: 450px;
-    margin-top: 0px;
 }
 
 #graphBread {
@@ -162,4 +159,5 @@ footer > *{
     width: 100%;
     max-width: 900px;
     margin-bottom: 0px;
+    margin-top: 20px;
 }
