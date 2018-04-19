@@ -115,7 +115,49 @@ footer > *{
     color: #fff;
 }
 
+
+#graphMoist {
+    min-width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    max-width: 450px;
+    margin-top: 0px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 #tempView {
     width: 110px;
     margin: auto;
+}
+
+.container div{
+    margin: 2%;
+}
+
+#graphTemp {
+    min-width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    max-width: 450px;
+    margin-top: 0px;
+}
+
+#graphBread {
+    min-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
+    margin-bottom: 0px;
 }

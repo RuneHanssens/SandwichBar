@@ -118,4 +118,39 @@ footer > *{
 #tempView {
     width: 110px;
     margin: auto;
+
+#graphMoist {
+    min-width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    max-width: 450px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+#graphTemp {
+    min-width: 340px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 50%;
+    max-width: 450px;
+}
+
+#graphBread {
+    min-width: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 900px;
 }
