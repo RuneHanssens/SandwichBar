@@ -76,7 +76,6 @@ public class AjaxController {
         Sandwich s = service.getSandwich(data.getName());
         s.setAmount(data.getAmount());
         service.updateSandwich(s);
-
     }
 
     @ResponseBody
