@@ -48,6 +48,7 @@
                 </td>
                 <td id="temp">
                 </td>
+                <td>&#8451;</td>
             </tr>
         </table>
     </div>
