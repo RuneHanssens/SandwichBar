@@ -19,6 +19,7 @@ function drawBarGraph(json) {
     maxValue += 2;
 
     let myChart3 = document.getElementById('myChart3').getContext('2d');
+    myChart3.clearRect(0, 0, document.getElementById('myChart3').width, document.getElementById('myChart3').height);
     let massPopChart = new Chart(myChart3, {
         type: 'bar',
         data: {
