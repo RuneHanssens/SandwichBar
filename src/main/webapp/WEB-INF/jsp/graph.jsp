@@ -16,18 +16,18 @@
 </header>
 <body>
 <div class="container">
-    <div id="graphMoist">
-       <h3>Vochtigheid</h3>
-        <canvas id="myChart1"></canvas>
-    </div>
-    <div id="graphTemp">
-       <h3>Temperatuur</h3>
-        <canvas id="myChart2"></canvas>
-    </div>
-    <div id="graphBread">
-       <h3>Populaire broodjes</h3>
-        <div><canvas id="myChart3"></canvas></div>
-    </div>
+<div id="graphMoist">
+    <h3>Vochtigheid</h3>
+    <div><canvas id="myChart1"></canvas></div>
+</div>
+<div id="graphTemp">
+    <h3>Temperatuur</h3>
+    <div><canvas id="myChart2"></canvas></div>
+</div>
+<div id="graphBread">
+    <h3>Populare broodjes</h3>
+    <div><canvas id="myChart3"></canvas></div>
+</div>
 </div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
@@ -35,6 +35,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/graph.js"></script>
 
+    
 </body>
 
     </body></html>

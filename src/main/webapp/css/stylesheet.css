@@ -1,10 +1,16 @@
 html {
-    font-family: arial;
     height: 100%;
+    font-family: arial;
     background: linear-gradient(160deg,#EBD42D, #3FA65B);
     background-repeat: no-repeat;
     background-attachment: fixed;
     /*    background: linear-gradient(#e66465, #9198e5);*/
+}
+
+body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 header{
@@ -12,6 +18,7 @@ header{
     padding-bottom: 10px;
     background: #ffffff;
     display: flex;
+    height: 10%;
 }
 
 header a {
@@ -121,8 +128,9 @@ footer > *{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 50%;
-    max-width: 450px;
+    width: 30%;
+    height: 40%;
+    margin-bottom: 0px;
 }
 
 .container {
@@ -131,11 +139,12 @@ footer > *{
     justify-content: center;
     width: 100%;
     padding: 0px;
-    margin-top: 1%;
-    margin-top: 5px
+    height: 80%;
 }
 #tempView {
-    width: 110px;
+    width: 80px;
+    height: 40px;
+    min-width: 0px;
     margin: auto;
 }
 
@@ -155,6 +164,7 @@ footer > *{
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
     margin-bottom: 5px;
+    max-height: 5%;
 }
 
 #graphBread h3 {
@@ -167,25 +177,38 @@ footer > *{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 50%;
-    max-width: 450px;
+    width: 30%;
+    height: 40%;
+    margin-bottom: 0px;
 }
 
 #graphBread {
-    min-width: 940px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    max-width: 900px;
+    width: 62%;
+    margin: 0px;
     margin-bottom: 0px;
-    margin-top: 1px;
-    height: 350px;
+    margin-top: 40px;
+    height: 35%:
 }
 
 #graphBread div{
     width: 100%;
     margin: 0px;
+    border-radius: 0px;
+}
+
+#graphTemp div{
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+#graphMoist div{
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px;
 }
 
 
