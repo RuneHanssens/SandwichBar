@@ -151,9 +151,15 @@ footer > *{
     width: 100%;
     text-align: center;
     margin: 0px;
-    padding: 9px;
+    padding: 20px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    margin-bottom: 5px;
+}
+
+#graphBread h3 {
+    height: 20px;
+    margin: 0px;
 }
 
 #graphTemp {
@@ -174,7 +180,15 @@ footer > *{
     max-width: 900px;
     margin-bottom: 0px;
     margin-top: 1px;
+    height: 350px;
 }
+
+#graphBread div{
+    width: 100%;
+    margin: 0px;
+}
+
+
 
 
 

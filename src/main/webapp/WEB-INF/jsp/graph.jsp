@@ -33,7 +33,7 @@
     </div>
     <div id="graphBread">
        <h3>Populare broodjes</h3>
-        <canvas id="myChart3"></canvas>
+        <div><canvas id="myChart3"></canvas></div>
     </div>
 </div>
 

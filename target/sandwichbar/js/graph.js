@@ -26,6 +26,8 @@ function drawBarGraph(json) {
             }]
         },
         options: {
+            maintainAspectRatio: false,
+            responsive: true,
             scales: {
                 yAxes: [{
                     display: true,
