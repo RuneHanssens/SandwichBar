@@ -16,7 +16,10 @@ function drawBarGraph(json) {
     }
 
     var maxValue = Math.max.apply(Math, data);
-    maxValue += 2;
+    
+    while(!(maxValue % 5 == 0)){
+        maxValue ++;
+    }
 
     let myChart3 = document.getElementById('myChart3').getContext('2d');
     chart = new Chart(myChart3, {
@@ -37,7 +40,8 @@ function drawBarGraph(json) {
                     display: true,
                     ticks: {
                         beginAtZero: true,
-                        fixedStepSize: 1,
+                        padding: 100,
+                        fixedStepSize: 5,
                         max:maxValue
                     }
                 }]
