@@ -46,7 +46,7 @@ public class SandwichDbInMemory implements SandwichDb {
     }
 
     private void generateContent(){
-        Sandwich s1 = new Sandwich("broodje1", 2.5, "brood met nog een paar dingen", 5);
+        Sandwich s1 = new Sandwich("broodje1", 2.5, "brood met nog een paar dingen", 0);
         Sandwich s2 = new Sandwich("broodje2", 3.5, "brood met nog een andere paar dingen", 10);
         addSandwich(s1);
         addSandwich(s2);
