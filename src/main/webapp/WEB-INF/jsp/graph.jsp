@@ -35,52 +35,7 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/graph.js"></script>
 
-    let massPopChart1= new Chart(myChart1, {
-        type:'line',
-        data:{
-            labels:['tijd1', 'tijd2', 'tijd3', 'tijd4'],
-            datasets:[{
-                label: 'Vochtigheid',
-                data:[
-                    17,
-                    25,
-                    13,
-                    23
-                ],
-                backgroundColor:'blue',
-            }]
-        },
-        options:{
-            maintainAspectRatio: false,
-            responsive: true
-        }
-    })
-    //////////////////////////////////////
-    let myChart2 = document.getElementById('myChart2').getContext('2d');
-
-    let massPopChart2 = new Chart(myChart2, {
-        type:'line',
-        data:{
-            labels:['tijd1', 'tijd2', 'tijd3', 'tijd4'],
-            datasets:[{
-                label: 'temp',
-                data:[
-                    24,
-                    25,
-                    15,
-                    -4
-                ],
-                backgroundColor:'orange',
-            }]
-        },
-        options:{
-            maintainAspectRatio: false,
-            responsive: true
-        }
-    })
-    /////////////////////////////////
     
-</script>
 </body>
 
     </body></html>
