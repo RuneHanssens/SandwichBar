@@ -11,7 +11,7 @@
     <nav>
         <img src="${pageContext.request.contextPath}/images/ucllLogo.png" class="logo">
         <a href="${pageContext.request.contextPath}/sandwich.htm">Broodjes</a>
-        <a href="${pageContext.request.contextPath}/graph.htm">Geschiedenis</a>
+        <a href="${pageContext.request.contextPath}/graph.htm">Statistieken</a>
     </nav>
 </header>
 <body>
@@ -35,7 +35,6 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/graph.js"></script>
 
-    
 </body>
 
     </body></html>
