@@ -1,36 +1,36 @@
-window.onload = graphPollManager;
+window.onload = graphPollManager();
 
 function graphPollManager() {
     pollBarGraph();
     setTimeout(graphPollManager, '10000');
 }
 
-function drawBarGraph(json){
+function drawBarGraph(json) {
     var labels = [];
     var data = [];
-    for(i in json){
+    for (i in json) {
         var graphData = json[i];
         labels.push(graphData.name);
         data.push(graphData.bought);
     }
 
-    let myChart = document.getElementById('myChart').getContext('2d');
-    let massPopChart = new Chart(myChart, {
-        type:'bar',
-        data:{
-            labels:labels,
-            datasets:[{
+    let myChart3 = document.getElementById('myChart3').getContext('2d');
+    let massPopChart = new Chart(myChart3, {
+        type: 'bar',
+        data: {
+            labels: labels,
+            datasets: [{
                 label: 'aantal verkocht',
-                data:data,
-                backgroundColor:'orange',
+                data: data,
+                backgroundColor: 'red',
             }]
         },
-        options:{
+        options: {
             scales: {
                 yAxes: [{
                     display: true,
                     ticks: {
-                        beginAtZero: true   // minimum value will be 0.
+                        beginAtZero: true // minimum value will be 0.
                     }
                 }]
             }
@@ -40,11 +40,11 @@ function drawBarGraph(json){
 
 }
 
-function pollBarGraph(){
+function pollBarGraph() {
     $.ajax({
-        type:"GET",
-        url:"ajax/barGraph.htm",
-        dataType:"json",
+        type: "GET",
+        url: "ajax/barGraph.htm",
+        dataType: "json",
         success: function (json) {
             console.log("success while retrieving the barGraph!");
             drawBarGraph(json);

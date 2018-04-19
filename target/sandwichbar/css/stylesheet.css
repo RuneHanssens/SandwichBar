@@ -115,9 +115,6 @@ footer > *{
     color: #fff;
 }
 
-#tempView {
-    width: 110px;
-    margin: auto;
 
 #graphMoist {
     min-width: 340px;
@@ -126,6 +123,7 @@ footer > *{
     justify-content: center;
     width: 50%;
     max-width: 450px;
+    margin-top: 0px;
 }
 
 .container {
@@ -135,6 +133,15 @@ footer > *{
     width: 100%;
     margin: 0px;
     padding: 0px;
+
+}
+#tempView {
+    width: 110px;
+    margin: auto;
+}
+
+.container div{
+    margin: 2%;
 }
 
 #graphTemp {
@@ -144,6 +151,7 @@ footer > *{
     justify-content: center;
     width: 50%;
     max-width: 450px;
+    margin-top: 0px;
 }
 
 #graphBread {
@@ -153,4 +161,5 @@ footer > *{
     justify-content: center;
     width: 100%;
     max-width: 900px;
+    margin-bottom: 0px;
 }
