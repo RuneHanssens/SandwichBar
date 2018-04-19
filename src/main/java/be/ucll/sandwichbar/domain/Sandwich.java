@@ -33,6 +33,9 @@ public class Sandwich {
     }
 
     public void setAmount(int amount) {
+        if (amount < this.amount){
+            bought(this.amount - amount);
+        }
         this.amount = amount;
     }
 
@@ -73,5 +76,9 @@ public class Sandwich {
 
     public void setBought(int bought) {
         this.bought = bought;
+    }
+
+    private void bought(int boughtAmount){
+        this.bought += boughtAmount;
     }
 }
