@@ -82,6 +82,12 @@ public class AjaxController {
     }
 
     @ResponseBody
+    @RequestMapping(method = RequestMethod.POST, value="/temp")
+    public void updateTemp(@RequestBody TemperatureUpdater data){
+        service.setTemp(data.getTemp());
+    }
+
+    @ResponseBody
     @RequestMapping(method = RequestMethod.POST, value="/hum")
     public void updateHum(@RequestBody HumidityUpdater data){
         System.out.println("VOCHT IS: " + data.getHumidity());
