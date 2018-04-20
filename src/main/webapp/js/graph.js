@@ -1,5 +1,5 @@
 window.onload = startUp();
-let chart;
+let chart1;
 
 function startUp(){
     drawGraphs();
@@ -7,21 +7,21 @@ function startUp(){
 }
 
 function pollManager(){
-    pollGraph1("update");
-    setTimeout(pollManager, 2000);
+    pollGraph("update");
+    setTimeout(pollManager, 5000);
 }
 
 function drawGraphs() {
-    pollGraph1("load");
+    pollGraph("load");
 }
 
-function pollGraph1(method) {
+function pollGraph(method) {
     $.ajax({
         type: "GET",
         url: "ajax/barGraph.htm",
         dataType: "json",
         success: function (json) {
-            console.log("success while retrieving the barGraph!");
+            console.log("success while retrieving the data!");
             if (method == "load"){
                 drawGraph1(json);
             }else if(method == "update"){
@@ -29,7 +29,7 @@ function pollGraph1(method) {
             }
         },
         error: function () {
-            console.log("Something went wrong trying to retrieve barGraph!");
+            console.log("Something went wrong trying to retrieve data!");
         },
     });
 }
@@ -40,12 +40,18 @@ function updateGraph1(json) {
         var graphData = json[i];
         data.push(graphData.bought);
     }
-    for (i in chart.data.datasets){
-        var dataxd = chart.data.datasets[i];
-        chart.data.datasets[i].data = data;
+    for (i in chart1.data.datasets){
+        chart1.data.datasets[i].data = data;
     }
-    chart.update();
+    var maxValue = Math.max.apply(Math, data);
+
+    while(!(maxValue % 5 == 0)){
+        maxValue ++;
+    }
+    chart1.config.options.scales.yAxes[0].ticks.max = maxValue;
+    chart1.update();
 }
+
 
 function drawGraph1(json){
     var labels = [];
@@ -64,7 +70,7 @@ function drawGraph1(json){
     }
 
     let myChart3 = document.getElementById('myChart3').getContext('2d');
-    chart = new Chart(myChart3, {
+    chart1 = new Chart(myChart3, {
         type: 'bar',
         data: {
             labels: labels,

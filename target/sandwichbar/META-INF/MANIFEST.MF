@@ -1,9 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
-Built-By: rémi
-=======
-Built-By: bbuys
->>>>>>> ce3db4f0f5e1ca3254f99add29cdb231eb77cce5
+Built-By: Rune
 Created-By: IntelliJ IDEA
-Build-Jdk: 1.8.0_101
+Build-Jdk: 1.8.0_121
 

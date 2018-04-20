@@ -4,14 +4,8 @@
 <head>
     <meta charset="utf-8">
     <%@include file="header.jspf"%>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.4.4.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="${pageContext.request.contextPath}/js/graph.js"></script>
+
 <link rel="stylesheet" href="/css/stylesheet.css">
-<script src="/js/graph.js"></script>
-<script src="/js/services.js"></script>
-<script src="/js/jquery-1.4.4.min.js"></script>
 </head>
 <header>
     <nav>
@@ -42,50 +36,9 @@
 </div>
 </div>
 
-<script>
-    let myChart1 = document.getElementById('myChart1').getContext('2d');
-
-    let massPopChart1= new Chart(myChart1, {
-        type:'doughnut',
-        data:{
-            labels:['Vochtigheid %'],
-            datasets:[{
-                label: 'Vochtigheid',
-                data:[
-                    80,
-                    20
-                ],
-                backgroundColor:['blue','lightgrey'],
-            }]
-        },
-        options:{
-
-        }
-    })
-    //////////////////////////////////////
-    let myChart2 = document.getElementById('myChart2').getContext('2d');
-
-    let massPopChart2 = new Chart(myChart2, {
-        type:'line',
-        data:{
-            labels:['tijd1', 'tijd2', 'tijd3', 'tijd4'],
-            datasets:[{
-                label: 'temp',
-                data:[
-                    24,
-                    25,
-                    15,
-                    -4
-                ],
-                backgroundColor:'orange',
-            }]
-        },
-        options:{
-
-        }
-    })
-    /////////////////////////////////
-    
-</script>
 </body>
 </html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/graph.js"></script>
