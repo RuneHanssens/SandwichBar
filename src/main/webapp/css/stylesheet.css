@@ -99,8 +99,9 @@ nav{
 }
 
 .logo{
-    height: 90px;
+    height: 70px;
     margin-left: 40px;
+    margin-top: 0%;
 }
 
 html{
@@ -109,19 +110,16 @@ html{
 }
 
 footer{
-    position: absolute;
     background: #1FA2FF;
     bottom: 0;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-footer > *{
     text-align: center;
     color: #fff;
+    left: 0;
+    margin-top: 2%;
 }
-
 
 #graphMoist {
     min-width: 340px;
@@ -153,6 +151,7 @@ footer > *{
     color: #FFF;
     background-color: #ededed;
     border-radius: 4px;
+    padding-bottom: 5px;
 }
 
 .container div h3{
@@ -190,7 +189,7 @@ footer > *{
     margin: 0px;
     margin-bottom: 0px;
     margin-top: 40px;
-    height: 35%:
+    height: 35%;
 }
 
 #graphBread div{
@@ -214,5 +213,19 @@ footer > *{
 
 
 
+
+#doughnut {
+    position: relative;
+}
+
+#donut-inner {
+    color: black;
+    text-align: center;
+    background-color: transparent;
+    position: absolute;
+    top: 45%;
+    height: 30%;
+    width: 50%;
+}
 
 
