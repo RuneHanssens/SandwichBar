@@ -1,11 +1,65 @@
-window.onload = graphPollManager();
+window.onload = startUp();
 let chart;
-function graphPollManager() {
-    pollBarGraph();
-    setTimeout(graphPollManager, '10000');
+
+function startUp(){
+    drawGraphs();
+    pollManager();
 }
 
-function drawBarGraph(json) {
+function pollManager(){
+    pollGraph1("update");
+    setTimeout(pollManager, 2000);
+}
+
+function drawGraphs() {
+    pollGraph1("load");
+}
+
+function pollGraph1(method) {
+    $.ajax({
+        type: "GET",
+        url: "ajax/barGraph.htm",
+        dataType: "json",
+        success: function (json) {
+            console.log("success while retrieving the barGraph!");
+            if (method == "load"){
+                drawGraph1(json);
+            }else if(method == "update"){
+                updateGraph1(json);
+            }
+        },
+        error: function () {
+            console.log("Something went wrong trying to retrieve barGraph!");
+        },
+    });
+}
+
+
+
+function updateGraph1(json) {
+
+
+    var data = [];
+    for (i in json) {
+        var graphData = json[i];
+        data.push(graphData.bought);
+    }
+
+    for (i in chart.data.datasets){
+        var dataxd = chart.data.datasets[i];
+        chart.data.datasets[i].data = data;
+    }
+
+    chart.update();
+}
+
+
+
+
+
+
+
+function drawGraph1(json){
     var labels = [];
     var data = [];
 
@@ -16,7 +70,7 @@ function drawBarGraph(json) {
     }
 
     var maxValue = Math.max.apply(Math, data);
-    
+
     while(!(maxValue % 5 == 0)){
         maxValue ++;
     }
@@ -48,41 +102,4 @@ function drawBarGraph(json) {
             }
         }
     })
-
-
 }
-
-function pollBarGraph() {
-    $.ajax({
-        type: "GET",
-        url: "ajax/barGraph.htm",
-        dataType: "json",
-        success: function (json) {
-            console.log("success while retrieving the barGraph!");
-            drawBarGraph(json);
-        },
-        error: function () {
-            console.log("Something went wrong trying to retrieve barGraph!");
-        },
-    });
-}
-
-// let myChart = document.getElementById('myChart').getContext('2d');
-// let massPopChart = new Chart(myChart, {
-//     type:'bar',
-//     data:{
-//         labels:['tijd1', 'tijd2', 'tijd3', 'tijd4'],
-//         datasets:[{
-//             label: 'temp',
-//             data:[
-//                 24,
-//                 25,
-//                 15,
-//                 -4
-//             ],
-//             backgroundColor:'orange',
-//         }]
-//     },
-//     options:{
-//     }
-// })
