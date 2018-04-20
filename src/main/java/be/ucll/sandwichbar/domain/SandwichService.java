@@ -47,4 +47,10 @@ public class SandwichService {
     public void setTemp(double temp){
         tDb.setTemp(temp);
     }
+
+    public double getHum(){return tDb.getHum();}
+
+    public void setHum(double hum){
+        tDb.setHum(hum);
+    }
 }
