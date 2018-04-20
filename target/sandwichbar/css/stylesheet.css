@@ -99,8 +99,9 @@ nav{
 }
 
 .logo{
-    height: 90px;
+    height: 70px;
     margin-left: 40px;
+    margin-top: 0%;
 }
 
 html{
@@ -109,19 +110,16 @@ html{
 }
 
 footer{
-    position: absolute;
     background: #1FA2FF;
     bottom: 0;
     width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-footer > *{
     text-align: center;
     color: #fff;
+    left: 0;
+    margin-top: 2%;
 }
-
 
 #graphMoist {
     min-width: 340px;

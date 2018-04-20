@@ -57,6 +57,22 @@ public class AjaxController {
         return null;
     }
 
+
+    @ResponseBody
+    @RequestMapping(method = RequestMethod.GET, value="/hum")
+    public String getHum(){
+        try {
+            HumidityUpdater test = new HumidityUpdater(service.getHum());
+            String result = toJson(test);
+            return result;
+        }catch (JsonProcessingException e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+
     @ResponseBody
     @RequestMapping(method = RequestMethod.POST, value="/sandwich")
     public void updateAmount(@RequestBody SandwichUpdater data){
@@ -66,9 +82,10 @@ public class AjaxController {
     }
 
     @ResponseBody
-    @RequestMapping(method = RequestMethod.POST, value="/temp")
-    public void updateTemp(@RequestBody TemperatureUpdater data){
-        service.setTemp(data.getTemp());
+    @RequestMapping(method = RequestMethod.POST, value="/hum")
+    public void updateHum(@RequestBody HumidityUpdater data){
+        System.out.println("VOCHT IS: " + data.getHumidity());
+        service.setHum(data.getHumidity());
     }
 
     private String toJson(Object o) throws JsonProcessingException {
