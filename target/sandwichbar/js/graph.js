@@ -136,8 +136,8 @@ function updateGraph2(json){
     var data = [];
     data.push(json.humidity);
     data.push(100 - json.humidity)
-    for (i in chart1.data.datasets){
-        chart1.data.datasets[i].data = data;
+    for (i in chart2.data.datasets){
+        chart2.data.datasets[i].data = data;
     }
     chart2.update();
 }
