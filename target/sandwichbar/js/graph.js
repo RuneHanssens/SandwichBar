@@ -1,5 +1,6 @@
 window.onload = startUp();
 let chart1;
+let chart2;
 
 function startUp(){
     drawGraphs();
@@ -7,25 +8,36 @@ function startUp(){
 }
 
 function pollManager(){
-    pollGraph("update");
+    pollGraph("update","ajax/barGraph.htm",1);
+    pollGraph("update","ajax/hum.htm",2);
     setTimeout(pollManager, 5000);
 }
 
 function drawGraphs() {
-    pollGraph("load");
+    pollGraph("load", "ajax/barGraph.htm", 1);
+    pollGraph("load", "ajax/hum.htm",2);
 }
 
-function pollGraph(method) {
+function pollGraph(method,url,graph) {
     $.ajax({
         type: "GET",
-        url: "ajax/barGraph.htm",
+        url: url,
         dataType: "json",
         success: function (json) {
             console.log("success while retrieving the data!");
             if (method == "load"){
-                drawGraph1(json);
+                if(graph ==1){
+                    drawGraph1(json);
+                }else if(graph == 2){
+                    drawGraph2(json);
+                }
+
             }else if(method == "update"){
-                updateGraph1(json);
+                if(graph == 1){
+                    updateGraph1(json);
+                }else if (graph == 2){
+                    updateGraph2(json);
+                }
             }
         },
         error: function () {
@@ -96,4 +108,36 @@ function drawGraph1(json){
             }
         }
     })
+}
+
+function drawGraph2(json){
+    var data = [];
+    data.push(json.humidity);
+    data.push(100 - json.humidity);
+    let myChart1 = document.getElementById('myChart1').getContext('2d');
+
+    chart2 = new Chart(myChart1, {
+        type:'doughnut',
+        data:{
+            labels:['Vochtigheid %'],
+            datasets:[{
+                label: 'Vochtigheid',
+                data: data,
+                backgroundColor:['orange','lightgrey'],
+            }]
+        },
+        options:{
+
+        }
+    })
+}
+
+function updateGraph2(json){
+    var data = [];
+    data.push(json.humidity);
+    data.push(100 - json.humidity)
+    for (i in chart1.data.datasets){
+        chart1.data.datasets[i].data = data;
+    }
+    chart2.update();
 }
